@@ -1,0 +1,3 @@
+ - git add .
+ - git commit -m "tulis disini apa yang di update"
+ - git push 
