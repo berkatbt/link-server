@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tombol Link Sederhana</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Sedikit styling tambahan agar tombol terlihat rapi saat fokus */
+    .btn-focus:focus {
+      outline: 3px solid rgba(99, 102, 241, 0.3);
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-gray-50 flex items-center justify-center">
+
+  <section class="bg-white p-10 rounded-lg shadow-2xl text-center">
+    <!-- gambar gruop dc -->
+  
+      <!-- image bulat -->
+       <img src="Fish-It-Roblox-2.jpeg" alt="gambar grup dc" class="w-32 h-32 rounded-full mx-auto mb-4">
+  
+     
+    <!-- tombol link -->
+    
+    <!-- tombol premium -->
+    <a id="linkButton"
+      href="https://www.roblox.com/share?code=_1g3jty26mfbqqna115ch2sva9568in54oldarv7rv7z3fhhr2r&type=ExperienceInvite"
+      target="_blank" rel="noopener noreferrer"
+      class="bg-[#606cf8] w-[500px] h-[50px] items-center justify-center flex text-white font-semibold rounded-md  active:bg-blue-800 transition-colors btn-focus"
+      aria-label="Buka tautan eksternal">
+       <!-- bacground img -->
+  
+        <img src="logo_dc.png" alt="logo-discrod" class="w-20 h-12 mr-2 bg-[#606cf8]"> 
+     
+      gruop discrod | Masuk Sekarang!
+    </a>
+    <!-- jarak antar tombol link -->
+     <br>
+    <!-- tombol server roblox -->
+    <a id="linkButton"
+      href="https://www.roblox.com/share?code=_1g3jty26mfbqqna115ch2sva9568in54oldarv7rv7z3fhhr2r&type=ExperienceInvite"
+      target="_blank" rel="noopener noreferrer"
+      class="bg-[#606cf8] w-[500px] h-[50px] items-center justify-center flex text-white font-semibold rounded-md hover:scale-110  duration-300 transition-transform active:bg-blue-800  btn-focus"
+      aria-label="Buka tautan eksternal">
+      <img src="logo-RB.png" alt="logo-discrod" class="w-20 h-12 mr-2 bg-[#606cf8]"> 
+      Server Roblox | Masuk Sekarang!
+    </a>
+  </section>
+  <!-- Ubah nilai href di <a> ini ke URL yang ingin diakses -->
+
+  <!-- Opsional: script kecil untuk mengganti link lewat query string ?u=URL -->
+  <script>
+    (function () {
+      try {
+        const params = new URLSearchParams(location.search);
+        const u = params.get('u');
+        if (u) {
+          const a = document.getElementById('linkButton');
+          // Validasi sederhana: tambahkan protokol jika tidak ada
+          const normalized = /^(https?:\/\/)/i.test(u) ? u : 'https://' + u;
+          a.href = normalized;
+        }
+      } catch (e) {
+        // jika terjadi error, abaikan saja
+        console.warn('Tidak bisa membaca query param u', e);
+      }
+    })();
+  </script>
+</body>
+
+</html>
