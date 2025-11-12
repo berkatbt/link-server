@@ -7,54 +7,38 @@
   <title>Akses</title>
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Sedikit styling tambahan agar tombol terlihat rapi saat fokus */
-    .btn-focus:focus {
-      outline: 3px solid rgba(99, 102, 241, 0.3);
-      outline-offset: 4px;
-    }
-  </style>
+
 </head>
 
 <body class="min-h-screen bg-gray-50 flex items-center justify-center">
 
-  <section class="bg-white p-10 rounded-lg shadow-2xl text-center">
-    <!-- gambar gruop dc -->
-  
-      <!-- image bulat -->
-       <img src="Fish-It-Roblox-2.jpeg" alt="gambar grup dc" class="w-32 h-32 rounded-full mx-auto mb-4">
-  
-     
-    <!-- tombol link -->
-    
-    <!-- tombol premium -->
-    <a id="linkButton"
-      href="https://discord.gg/GWHXCVYc"
-      target="_blank" rel="noopener noreferrer"
-      class="bg-[#606cf8] w-[500px] h-[50px] items-center justify-center flex text-white font-semibold rounded-md  active:bg-blue-800 transition-colors btn-focus"
-      aria-label="Buka tautan eksternal">
-       <!-- bacground img -->
-  
-        <img src="logo_dc.png" alt="logo-discrod" class="w-20 h-12 mr-2 bg-[#606cf8]"> 
-     
-      gruop discrod | Masuk Sekarang!
-    </a>
-    <!-- jarak antar tombol link -->
-     <br>
-    <!-- tombol server roblox -->
-    <a id="linkButton"
-      href="https://www.roblox.com/share?code=_1g3jty26mfbqqna115ch2sva9568in54oldarv7rv7z3fhhr2r&type=ExperienceInvite"
-      target="_blank" rel="noopener noreferrer"
-      class="bg-[#606cf8] w-[500px] h-[50px] items-center justify-center flex text-white font-semibold rounded-md hover:scale-110  duration-300 transition-transform active:bg-blue-800  btn-focus"
-      aria-label="Buka tautan eksternal">
-      <img src="logo-RB.png" alt="logo-discrod" class="w-20 h-12 mr-2 bg-[#606cf8]"> 
-      Server Roblox | Masuk Sekarang!
-    </a>
+  <section class="bg-white p-6 sm:p-10 rounded-lg shadow-2xl text-center max-w-xl mx-auto">
+  <!-- gambar grup dc -->
+  <img src="Fish-It-Roblox-2.jpeg" alt="gambar grup dc" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto mb-4 object-cover">
 
-        <div class="text-center mt-6 text-gray-500">
-      &copy; 2025 berkat_bt! | All rights reserved.
-    </div>
-  </section>
+  <!-- tombol link Discord -->
+  <a id="linkButton"
+    href="https://discord.gg/GWHXCVYc"
+    target="_blank" rel="noopener noreferrer"
+    class="bg-[#606cf8] w-full sm:w-[500px] h-12 sm:h-[50px] flex items-center justify-center text-white font-semibold rounded-md active:bg-blue-800 transition-colors mx-auto mb-4 px-4">
+    <img src="logo_dc.png" alt="logo-discord" class="w-10 h-8 sm:w-20 sm:h-12 mr-2 bg-[#606cf8] object-contain">
+    Group Discord | Masuk Sekarang!
+  </a>
+
+  <!-- tombol server Roblox -->
+  <a id="linkButton"
+    href="https://www.roblox.com/share?code=_1g3jty26mfbqqna115ch2sva9568in54oldarv7rv7z3fhhr2r&type=ExperienceInvite"
+    target="_blank" rel="noopener noreferrer"
+    class="bg-[#606cf8] w-full sm:w-[500px] h-12 sm:h-[50px] flex items-center justify-center text-white font-semibold rounded-md hover:scale-105 duration-300 transition-transform active:bg-blue-800 mx-auto px-4">
+    <img src="logo-RB.png" alt="logo-roblox" class="w-10 h-8 sm:w-20 sm:h-12 mr-2 bg-[#606cf8] object-contain">
+    Server Roblox | Masuk Sekarang!
+  </a>
+
+  <!-- footer -->
+  <div class="text-center mt-6 text-gray-500 text-sm sm:text-base">
+    &copy; 2025 <span class="font-semibold">berkat_bt!</span> | All rights reserved.
+  </div>
+</section>
 
 
 
